@@ -1,9 +1,5 @@
-// assets/js/config.js
-// ── MODIFICA SOLO QUI quando vuoi cambiare utenti ──
-
 window.APP_CONFIG = {
   minUsernameLength: 2,
-
   allowedUsernames: [
     "youngestmoonsta",
     "admin",
@@ -14,7 +10,6 @@ window.APP_CONFIG = {
     "cirillo",
     "crama",
     "carlobarba1"
-    // aggiungi altri nomi qui sotto, uno per riga
-    // "", "", ""  ← puoi lasciare righe vuote se vuoi
+    // ← aggiungi qui nuovi nomi quando vuoi
   ].map(s => s.toLowerCase().trim())
 };
