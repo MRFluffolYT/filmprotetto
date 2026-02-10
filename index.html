@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MRFluffolFilm</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- Umami -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="94b892f6-ccbe-4a8a-9488-65774e908597"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="username-modal">
+  <div class="modal-content">
+    <h2>Per una maggiore sicurezza</h2>
+    <p>Inserisci il tuo username per continuare<br>(verrà usato solo per non ricevere accessi da estranei)</p>
+    <input type="text" id="username-input" placeholder="Il tuo nome" autocomplete="off" maxlength="30" />
+    <button id="username-submit" disabled>Continua</button>
+  </div>
+</div>
+
+<header>
+  <h1>MRFluffolFilm</h1>
+  <div id="search-container">
+    <input type="text" id="searchInput" placeholder="Cerca film, serie TV..." autocomplete="off"/>
+    <button id="searchBtn">Cerca</button>
+  </div>
+</header>
+
+<div id="loading">Caricamento in corso...</div>
+<div id="results"></div>
+
+<div id="tvControls">
+  <label>Stagione: <select id="seasonSelect"></select></label>
+  <label>Episodio: <select id="episodeSelect"></select></label>
+</div>
+
+<iframe id="playerFrame" allowfullscreen></iframe>
+
+<div id="downloadContainer">
+  <a id="downloadLink" href="#" target="_blank" download>
+    <button>⬇️ Scarica Video</button>
+  </a>
+</div>
+
+<!-- Scripts - ORDINE IMPORTANTE -->
+<script src="assets/js/config.js"></script>
+<script src="assets/js/access-control.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
